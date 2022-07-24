@@ -1,3 +1,22 @@
-.row {
-	margin-bottom: 20px;
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #5B7286;
+	font-size: 20px;
 }
+
+h1 {
+	color: #fcb900 !important;
+}
+
+.heading-container {
+	align-items: end !important;
+	
+}
+
+
+.page-heading {
+	margin-left: 5px;
+	margin-bottom: -10px;
+	font-size: 70px;
+}
+

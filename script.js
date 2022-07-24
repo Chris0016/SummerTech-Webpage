@@ -55,11 +55,7 @@ const events = [
      'Fighting Radiant Oblobbles but Every Time we Die we do 5 Push-Ups',
     'Staff Name': 'Andrew, Matt S, and Aaron',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+ 
   { Day: 'Monday',
     Time: '6:30',
     'Event Name': 'Two Rooms and a Boom',
@@ -100,11 +96,7 @@ const events = [
     'Event Name': 'Home Run Derby Watch Party',
     'Staff Name': 'John',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+  
   { Day: 'Tuesday',
     Time: '6:30',
     'Event Name':
@@ -147,11 +139,7 @@ const events = [
      'Zach Destroys Amazon Customer Service with Kindess and Reason',
     'Staff Name': 'Zach T',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+  
   { Day: 'Wednesday',
     Time: '6:30',
     'Event Name': 'Reading the INTERCAL Manual',
@@ -192,11 +180,7 @@ const events = [
     'Event Name': 'Jackbox (or whatever)',
     'Staff Name': 'Michael',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+  
   { Day: 'Thursday',
     Time: '6:30',
     'Event Name': 'Smash Tournament',
@@ -222,11 +206,7 @@ const events = [
     'Event Name': 'TNS',
     'Staff Name': '',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+  
   { Day: 'Friday',
     Time: '12:30',
     'Event Name': 'Gartic Phone',
@@ -305,11 +285,7 @@ const test_events = [
      'Fighting Radiant Oblobbles but Every Time we Die we do 5 Push-Ups',
     'Staff Name': 'Andrew, Matt S, and Aaron',
     Color: '' },
-  { Day: '',
-    Time: '',
-    'Event Name': '',
-    'Staff Name': '',
-    Color: '' },
+  
   { Day: 'Monday',
     Time: '6:30',
     'Event Name': 'Two Rooms and a Boom',
@@ -338,7 +314,7 @@ let currentTable;
  	holder = tableRow_template.cloneNode(true); //Create a new empty row(not yet added)
  	console.log()
  	//Set the correct tvalues of that row
- 	holder.querySelector(".event-time").innerText = event.Time;
+ 	holder.querySelector(".event-time").innerText = event.Time + "PM";
  	holder.querySelector(".event-title").innerText = event['Event Name'];
  	holder.querySelector(".event-staff").innerText = event['Staff Name']; 
 
@@ -350,3 +326,7 @@ let currentTable;
 
  }
  // document.querySelector(".container").appendChild(clonedRow);
+
+
+ //Hide all templates
+ document.querySelector(".hide-me").style.display = "none";
